@@ -1,0 +1,475 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css">
+		<link rel="stylesheet" href="plugin/chalkboard/style.css">
+		<link rel="stylesheet" href="plugin/customcontrols/style.css">
+
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+		<style>
+			.container{
+   				 display: flex;
+			}
+			.col{
+    			flex: 1;
+			}
+		</style>
+			<script async defer src="https://buttons.github.io/buttons.js"></script>
+
+		<script src="plugin/menu/menu.js"></script>
+   
+
+
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				
+				<section>
+					<h2>Project NExT: Technology and the Classroom</h2>
+					<h3>JMM 2024</h3>	
+					<h4>M 111</h4>
+					
+					
+					<h4>
+						Oxford College of Emory University <a href="https://app.oxford.emory.edu/WebApps/Directory/index.cfm/view/9984" target="_blank">Tien Chih</a>
+					</h4>
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						<h3>Traditional Flow</h3>
+						<ul>
+							<li style="font-size: 30px;" >Instructor covers the concepts of the course.</li>
+							<li style="font-size: 30px;" class="fragment">Instructor does some example problems.</li>
+							<li style="font-size: 30px;" class="fragment">Students go home to review and do homework.</li>
+							<li style="font-size: 30px;" class="fragment">Students are assesed by some high-stake assesment.</li>
+						</ul>
+
+					</section>
+					<section data-auto-animate>
+						<h3> Flow with SBG </h3>
+						<ul>
+							<li style="font-size: 30px;" >Instructor covers the concepts of the course.</li>
+							<li style="font-size: 30px;" >Instructor does some example problems.</li>
+							<li style="font-size: 30px;" >Students go home to review and do homework.</li>
+							<li style="font-size: 30px;" >Students are assesed by repeatable low-stakes assesment.</li>
+						</ul>
+
+					</section>
+
+					<section data-auto-animate>
+						<h3> Flow with SBG+IBL Ideally</h3>
+						<ul>
+							<li style="font-size: 30px;" >Students cover the concepts of the course with some scaffolded exporation.</li>
+							<li style="font-size: 30px;" >Students do some example problems.</li>
+							<li style="font-size: 30px;" >Students go home to review and do homework.</li>
+							<li style="font-size: 30px;" >Students are assesed by repeatable low-stakes assesment.</li>
+						</ul>
+
+					</section>
+
+					<section data-auto-animate>
+						<h3> Flow with SBG+IBL Ideally </h3>
+						<ul>
+							<li style="font-size: 30px;" >Students mostly cover the concepts of the course with some scaffolded exporation.</li>
+							<li style="font-size: 30px;" >?????????</li>
+							<li style="font-size: 30px;" >Students go home to review and do homework.</li>
+							<li style="font-size: 30px;" >Students are assesed by repeatable low-stakes assesment.</li>
+						</ul>
+
+						<p style="font-size: 30px;" class="fragment">
+							From both students and colleagues: students should see a completed version of a problem from start to finish.
+						</p>
+
+					</section>
+
+				</section>
+
+
+				<section>
+
+					<section data-auto-animate>
+						<div  >
+									<p style="font-size: 30px;" >
+										Suppose that a car drives east between \(40\)mph and \(55\)mph for an hour, then between \(60\)mph and \(80\)mph for 2 hours.
+
+									</p>
+
+									<p style="font-size: 30px;" > 
+										Whats the least distance they  could have  traveled?  Whats the farthest they could have traveled?
+
+									</p>
+									
+
+						</div>
+
+						<div class="fragment">
+							<p style="font-size: 30px;" > 
+								This doesn't seem super exact, if you pick a distance in this range and then are told the actual distance, what is the farthest off that you could be?
+							</p>
+
+						</div>
+
+						
+
+						
+					</section>
+
+
+
+					
+
+					
+
+					
+
+					
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						<div >
+							<p style="font-size: 30px;" >
+								Suppose a particles velocity is \(v(t)=t^2\)m/s \(t\) seconds after we start measuring.
+										
+
+							</p>
+
+							<p style="font-size: 30px;" >
+								If \(t\) is in \([0,1]\) whats the lowest the particles velocity could be?  The highest?  What about in \([1,3]\)?
+										
+
+							</p>
+
+							
+
+									
+						</div>
+
+						<div class="fragment">
+							<p style="font-size: 30px;" >
+								If \(t\) is in \([0,1]\) whats the shortest distance the particles velocity could have traveled?  The farthest?  What about in \([1,3]\)?
+										
+
+							</p>
+
+						</div>
+
+						<div class="fragment">
+							<p style="font-size: 30px;" >
+								What are the errors in these cases?
+										
+
+							</p>
+
+						</div>
+							
+					</section>
+					
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						<div >	
+							<p style="font-size: 30px;" > 
+								If \(v\) is a constant, then the change of a particles position in \(\Delta t\) seconds moving at \(v\)m/s is \[\Delta x = v\Delta t.\]
+							</p>
+							
+						</div>
+
+
+						<div class="fragment">
+							<div class="r-frame">	
+								<p style="font-size: 30px;" > 
+									If \(\underline{v}\leq v \leq \overline{v}\) then the change of a particles position in \(\Delta t\) seconds moving at \(v\)m/s satisfies \[\underline{v}\Delta t\leq v\Delta t \leq \overline{v} \Delta t.\]
+								</p>
+							</div>
+						</div>
+
+						
+					</section>
+
+					
+
+					
+					
+				</section>
+
+
+				<section>
+					
+					
+
+					<section data-auto-animate>
+						<div class="r-frame">	
+							<p style="font-size: 30px;" > 
+								Consider \(v(t)=t^2\)  over \(t\) in \([0,2]\)  Let \(n=4\).  If we subdivide \([0,2]\) into 4 pieces, we get 4 regions \[[t_{i-1}, t_{i}]\] where \(t_0=0, t_1=0.5, t_2=1, t_3=1.5, t_4=2.\)
+							</p>
+							
+						</div>
+
+						<div>
+							<p style="font-size: 30px;" > 
+								For each of the 4 regions region \([t_{i-1}, t_i]\) find a lower bound \(\underline{v}_i\) and upper bound \(\overline{v}_i\) for the velocity in that region.
+							</p>
+						</div>
+
+						<div class="fragment">
+							<p style="font-size: 30px;" > 
+								For each of the 4 regions region \([t_{i-1}, t_i]\) find a lower bound  and upper bound  for the distance traveled in that region.
+							</p>
+						</div>
+
+						<div class="fragment">
+							<p style="font-size: 30px;" > 
+								Find a lower and upper bound for the distance they could have traveled.
+							</p>
+						</div>
+
+						
+
+						
+					</section>
+
+
+					<section data-auto-animate>
+						<iframe src="https://www.desmos.com/calculator/bf6speben8" width="90%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+						
+
+						
+					</section>
+
+					
+
+
+					<section data-auto-animate>
+						<iframe src="https://www.desmos.com/calculator/phrmpm3iua" width="90%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+						<div class="fragment">
+							<p style="font-size: 30px;" > 
+								Bump \(n\) up a few at a time.  What happens?
+							</p>
+						</div>
+
+						
+
+						
+					</section>
+
+					<section data-auto-animate>
+						<iframe src="https://www.desmos.com/calculator/hfchfd03gc" width="90%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+
+						<div class="fragment">
+							<p style="font-size: 30px;" > 
+								&#129300;
+							</p>
+						</div>
+
+						
+
+						
+					</section>
+					
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						<div class="r-frame">	
+							<p style="font-size: 30px;" > 
+								The displacement of a particle over \([a,b]\) satisfies \[\sum_{i=1}^n \underline{v}_i(t_i-t_{i-1})\leq D \leq \sum_{i=1}^n  \overline{v}_i(t_i-t_{i-1})\] where \(t_0=a< t_1<\cdots< t_{n-1}< t_n=b\) \(\underline{v}_i, \overline{v}_i\) are the lower and upper bound of \(v\) in \([t_i-t_{i-1}]\), 
+							</p>
+							
+						</div>
+
+						
+
+						
+
+						
+					</section>
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						<iframe src="https://tienchih.github.io/oxcalcbank/#/bank/IN1/1/" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+							<p style="font-size: 30px;" > 
+								<a href="https://tienchih.github.io/oxcalcbank/#/bank/IN1/1/" target="_blank">LINK</a>
+
+							</p>
+					</section>
+
+					
+				</section>
+
+				<section >
+						<video height="600" controls>
+						      <source src="img/OXCIN1.mp4" type=video/mp4>
+						</video>
+				</section>
+
+
+				
+
+
+				<section>
+					<section data-auto-animate>
+						<iframe src="https://tienchih.github.io/Cal3/slide17.html" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+							<p style="font-size: 30px;" > 
+								<a href="https://tienchih.github.io/Cal3/slide17.html" target="_blank">LINK</a>
+
+							</p>
+					</section>
+
+					<section data-auto-animate>
+						<iframe src="https://matthematician.github.io/vecit/#/bank/V4/1/" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+							<p style="font-size: 30px;" > 
+								<a href="https://matthematician.github.io/vecit/#/bank/V4/1//" target="_blank">LINK</a>
+
+							</p>
+					</section>
+
+					<section data-auto-animate>
+						<video height="600" controls>
+						      <source src="img/C3V4.mp4" type=video/mp4>
+						</video>
+					</section>
+
+					
+				</section>
+
+				<section>
+					<section data-auto-animate>
+						<iframe src="https://tienchih.github.io/tbil-stats/Sec_HypothesisTesing.html" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+							<p style="font-size: 30px;" > 
+								<a href="https://tienchih.github.io/tbil-stats/Sec_HypothesisTesing.html" target="_blank">LINK</a>
+
+							</p>
+					</section>
+
+					<section data-auto-animate>
+						<iframe src="https://tienchih.github.io/checkit-stats/#/bank/F3/1/" width="100%" height="500" style="border: 1px solid #ccc" frameborder=0></iframe>
+							<p style="font-size: 30px;" > 
+								<a href="https://tienchih.github.io/checkit-stats/#/bank/F3/1/" target="_blank">LINK</a>
+
+							</p>
+					</section>
+
+					<section data-auto-animate>
+						<video height="600" controls>
+						      <source src="img/StatsF3a.mp4" type=video/mp4>
+						</video>
+					</section>
+
+					
+				</section>
+
+				<section>
+					<h2>Thank You!</h2>
+					<img src="img/NExT.png" width="100%">
+					<h4>Questions?</h4>
+				</section>
+
+
+
+
+				
+					
+				
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+		<script src="plugin/math/math.js"></script>
+		<script src="plugin/chalkboard/plugin.js"></script>
+		<script src="plugin/customcontrols/plugin.js"></script>
+
+
+
+	<script>
+  	Reveal.initialize({
+		math: {
+			mathjax: 'https://cdn.jsdelivr.net/gh/mathjax/mathjax@2.7.8/MathJax.js',
+			config: 'TeX-AMS_HTML-full',
+			// pass other options into `MathJax.Hub.Config()`
+			TeX: { Macros: { RR: "{\\bf R}" } }
+		},
+
+		chalkboard: {
+        boardmarkerWidth: 3,
+        chalkWidth: 7,
+        chalkEffect: 1.0,
+        storage: null,
+        src: null,
+        readOnly: undefined,
+        transition: 800,
+        theme: "chalkboard",
+        background: [ 'rgba(127,127,127,.1)' , path + 'img/blackboard.png' ],
+        grid: { color: 'rgb(50,50,10,0.5)', distance: 80, width: 2},
+        eraser: { src: path + 'img/sponge.png', radius: 20},
+        boardmarkers : [
+                { color: 'rgba(100,100,100,1)', cursor: 'url(' + path + 'img/boardmarker-black.png), auto'},
+                { color: 'rgba(30,144,255, 1)', cursor: 'url(' + path + 'img/boardmarker-blue.png), auto'},
+                { color: 'rgba(220,20,60,1)', cursor: 'url(' + path + 'img/boardmarker-red.png), auto'},
+                { color: 'rgba(50,205,50,1)', cursor: 'url(' + path + 'img/boardmarker-green.png), auto'},
+                { color: 'rgba(255,140,0,1)', cursor: 'url(' + path + 'img/boardmarker-orange.png), auto'},
+                { color: 'rgba(150,0,20150,1)', cursor: 'url(' + path + 'img/boardmarker-purple.png), auto'},
+                { color: 'rgba(255,220,0,1)', cursor: 'url(' + path + 'img/boardmarker-yellow.png), auto'}
+        ],
+        chalks: [
+                { color: 'rgba(255,255,255,0.5)', cursor: 'url(' + path + 'img/chalk-white.png), auto'},
+                { color: 'rgba(96, 154, 244, 0.5)', cursor: 'url(' + path + 'img/chalk-blue.png), auto'},
+                { color: 'rgba(237, 20, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-red.png), auto'},
+                { color: 'rgba(20, 237, 28, 0.5)', cursor: 'url(' + path + 'img/chalk-green.png), auto'},
+                { color: 'rgba(220, 133, 41, 0.5)', cursor: 'url(' + path + 'img/chalk-orange.png), auto'},
+                { color: 'rgba(220,0,220,0.5)', cursor: 'url(' + path + 'img/chalk-purple.png), auto'},
+                { color: 'rgba(255,220,0,0.5)', cursor: 'url(' + path + 'img/chalk-yellow.png), auto'}
+        ]
+    },
+    customcontrols: {
+  		controls: [
+  			{ icon: '<i class="fa fa-pen-square"></i>',
+  			  title: 'Toggle chalkboard (B)',
+  			  action: 'RevealChalkboard.toggleChalkboard();'
+  			},
+  			{ icon: '<i class="fa fa-pen"></i>',
+  			  title: 'Toggle notes canvas (C)',
+  			  action: 'RevealChalkboard.toggleNotesCanvas();'
+  			}
+  		]
+    },
+
+		plugins: [ RevealMath, RevealChalkboard, RevealCustomControls, RevealMenu  ]
+		});
+	</script>
+
+	</body>
+</html>
